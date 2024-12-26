@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { DropdownMenuLabel } from "@radix-ui/react-dropdown-menu"
 import { signOut } from "next-auth/react"
-import { redirect } from "next/navigation";
 
 export default function UserNav() {
     return (

@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { ReactNode } from "react";
-import BackgroundImage from "../../../public/netflix_logo.svg"
 export default function AuthLayout({ children }: { children: ReactNode }) {
     return (
         <div className="flex relative w-h-screen flex-col bg-black md:items-justify-center md:bg-transparent">

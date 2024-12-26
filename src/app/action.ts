@@ -10,7 +10,7 @@ export default async function addToWatchList(formData: FormData) {
     const movieId = formData.get('movieId')
     const pathname = formData.get('pathName') as string
     const session = await getServerSession(authOptions)
-    const data = await prisma.watchList.create({
+    await prisma.watchList.create({
         data: {
             userId: session?.user?.email as string,
             movieId: Number(movieId),
@@ -23,7 +23,7 @@ export async function deleteFromWatchList(formData: FormData) {
 
     const watchListId = formData.get('watchListId') as string
     const pathname = formData.get('pathName') as string
-    const data = await prisma.watchList.delete({
+    await prisma.watchList.delete({
         where: {
             id: watchListId
         },

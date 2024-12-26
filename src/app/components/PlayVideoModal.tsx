@@ -5,7 +5,7 @@ interface IAppProps {
     overview: string;
     youtubeUrl: string;
     state: boolean;
-    changeState: any;
+    changeState:  (value: boolean) => void;
     release: number;
     age: number;
     duration: number,
